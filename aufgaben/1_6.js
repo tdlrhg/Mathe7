@@ -1,4 +1,4 @@
-const aufgabenPool_1_6 = [
+var aufgabenPool_1_6 = [
   {
     format: 'mc',
     svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 170" width="210" height="170" style="border:1px solid #ccc;border-radius:4px;background:#fff;display:block;margin:8px auto;">
