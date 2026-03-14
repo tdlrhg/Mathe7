@@ -1610,10 +1610,12 @@ function zeigeFrage() {
     }
     const antworten = document.getElementById('antworten');
     antworten.innerHTML = '';
-    aufgabe.optionen.forEach((opt, i) => {
+    // Optionen mischen
+    const gemischteIndizes = aufgabe.optionen.map((_, i) => i).sort(() => Math.random() - 0.5);
+    gemischteIndizes.forEach(i => {
       const btn = document.createElement('button');
       btn.className = 'antwort-btn';
-      btn.innerHTML = opt;
+      btn.innerHTML = aufgabe.optionen[i];
       btn.onclick = () => antwortenClick(i, aufgabe);
       antworten.appendChild(btn);
     });
