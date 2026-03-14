@@ -81,7 +81,7 @@ var aufgabenPool_1_6 = [
     optionen: [
       'Je teurer ein Produkt ist, desto weniger Kunden kaufen es.',
       'Ein Händler senkt den Preis, wenn er zu viel Ware hat.',
-      'Teure Produkte sind bei Sammlern besonders begehrt.',
+      'Je höher der Preis, desto mehr Gewinn macht der Händler.',
       'Der Preis eines Produkts bleibt konstant, egal wie viele gekauft werden.',
       'Je mehr von einem Produkt produziert wird, desto günstiger wird es.'
     ],
