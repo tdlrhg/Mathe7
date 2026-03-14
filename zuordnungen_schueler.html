@@ -1330,20 +1330,17 @@ async function testStarten(kompetenzId) {
   // Externe Aufgabendatei laden falls noch nicht geschehen
   if (aufgabenPool[kompetenzId] === null) {
     try {
-      const script = document.createElement('script');
-      script.src = `aufgaben/${kompetenzId}.js`;
-      await new Promise((resolve, reject) => {
-        script.onload = resolve;
-        script.onerror = reject;
-        document.head.appendChild(script);
-      });
+      const response = await fetch(`aufgaben/${kompetenzId}.js`);
+      const code = await response.text();
+      eval(code);
       const varName = 'aufgabenPool_' + kompetenzId;
-      if (!window[varName] || window[varName].length === 0) {
-        console.error('Pool nicht gefunden:', varName, window[varName]);
-      }
       aufgabenPool[kompetenzId] = window[varName] || [];
+      if (aufgabenPool[kompetenzId].length === 0) {
+        alert('Aufgaben konnten nicht geladen werden.');
+        return;
+      }
     } catch(e) {
-      alert('Aufgaben konnten nicht geladen werden.');
+      alert('Aufgaben konnten nicht geladen werden: ' + e.message);
       return;
     }
   }
