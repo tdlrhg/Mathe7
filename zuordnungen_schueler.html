@@ -1332,9 +1332,9 @@ async function testStarten(kompetenzId) {
     try {
       const response = await fetch(`aufgaben/${kompetenzId}.js`);
       const code = await response.text();
-      eval(code);
-      const varName = 'aufgabenPool_' + kompetenzId;
-      aufgabenPool[kompetenzId] = window[varName] || [];
+      // Wert direkt aus eval extrahieren
+      const geladen = eval('(' + code.replace(/^var\s+\w+\s*=\s*/, '').replace(/;\s*$/, '') + ')');
+      aufgabenPool[kompetenzId] = Array.isArray(geladen) ? geladen : [];
       if (aufgabenPool[kompetenzId].length === 0) {
         alert('Aufgaben konnten nicht geladen werden.');
         return;
