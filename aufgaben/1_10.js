@@ -50,8 +50,8 @@ var aufgabenPool_1_10 = [
   <line x1="30" y1="145" x2="30" y2="15" stroke="#333" stroke-width="1.5"/>
   <polygon points="195,140 202,145 195,150" fill="#333"/>
   <polygon points="25,15 30,8 35,15" fill="#333"/>
-  <text x="205" y="149" font-size="10" fill="#333" font-family="Arial">Anzahl</text>
-  <text x="2" y="12" font-size="10" fill="#333" font-family="Arial">Gewicht</text>
+  <text x="205" y="149" font-size="10" fill="#333" font-family="Arial">Kilogramm</text>
+  <text x="2" y="12" font-size="10" fill="#333" font-family="Arial">Preis</text>
   <polyline points="30,105 60,93 90,81 120,69 150,57 180,45" fill="none" stroke="#3b5bdb" stroke-width="2"/>
   <circle cx="30" cy="105" r="3" fill="#3b5bdb"/>
 </svg>`,
@@ -96,7 +96,7 @@ var aufgabenPool_1_10 = [
   <polygon points="195,140 202,145 195,150" fill="#333"/>
   <polygon points="25,15 30,8 35,15" fill="#333"/>
   <text x="205" y="149" font-size="10" fill="#333" font-family="Arial">Zeit</text>
-  <text x="2" y="12" font-size="10" fill="#333" font-family="Arial">Anzahl</text>
+  <text x="2" y="12" font-size="10" fill="#333" font-family="Arial">Höhe</text>
   <polyline points="30,125 60,125 90,125 115,120 135,105 155,80 175,45" fill="none" stroke="#3b5bdb" stroke-width="2"/>
 </svg>`,
     frage: 'Welche Situation passt zu diesem Diagramm?',
