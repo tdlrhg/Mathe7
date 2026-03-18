@@ -534,6 +534,15 @@ function zeigeFrage() {
   }
 
   if (aufgabe.format === 'wertetabelle') {
+    // Situation anzeigen
+    if (aufgabe.situation) {
+      const p = document.createElement('p');
+      p.style.cssText = 'background:#f0f4ff;border-left:3px solid var(--primary);padding:10px 14px;border-radius:4px;font-size:0.92rem;margin-bottom:12px;';
+      p.textContent = aufgabe.situation;
+      wrapper.appendChild(p);
+    }
+    // Aufgabenstellung
+    document.getElementById('frage-text').textContent = 'Fülle die Wertetabelle aus:';
     const antworten = document.getElementById('antworten');
     antworten.innerHTML = '';
     const tbl = document.createElement('table');
