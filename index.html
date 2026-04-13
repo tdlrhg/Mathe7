@@ -1,4 +1,106 @@
 <!DOCTYPE html>
-<html>
-<head><meta http-equiv="refresh" content="0; url=zuordnungen_schueler.html"></head>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mathe 7 – Lernlandkarten</title>
+<link rel="icon" type="image/png" href="FavIcon7.png">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap');
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Nunito', sans-serif;
+    background: #f0f4ff;
+    min-height: 100vh;
+    padding: 40px 16px;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  header h1 {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #2d4f6a;
+    letter-spacing: -1px;
+  }
+  header p {
+    color: #6c757d;
+    margin-top: 6px;
+    font-size: 1rem;
+  }
+  .kacheln {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .kachel {
+    background: white;
+    border-radius: 20px;
+    padding: 28px 32px;
+    width: 280px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.15s, box-shadow 0.15s;
+    border-top: 5px solid #ccc;
+  }
+  .kachel:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+  }
+  .kachel.zuordnungen { border-top-color: #7aaec8; }
+  .kachel.prozente { border-top-color: #4d8aaa; }
+  .kachel.bald {
+    opacity: 0.4;
+    cursor: default;
+    pointer-events: none;
+  }
+  .kachel-titel {
+    font-size: 1.15rem;
+    font-weight: 900;
+    margin-bottom: 6px;
+  }
+  .kachel.zuordnungen .kachel-titel { color: #7aaec8; }
+  .kachel.prozente .kachel-titel { color: #4d8aaa; }
+  .kachel-text {
+    font-size: 0.88rem;
+    color: #6c757d;
+    line-height: 1.5;
+  }
+  .kachel-badge {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.78rem;
+    font-weight: 800;
+    color: white;
+  }
+  .kachel.zuordnungen .kachel-badge { background: #7aaec8; }
+  .kachel.prozente .kachel-badge { background: #4d8aaa; }
+  .kachel.bald .kachel-badge { background: #aaa; }
+</style>
+</head>
+<body>
+<header>
+  <h1>🗺️ Mathe 7 – Lernlandkarten</h1>
+  <p>Wähle ein Thema aus</p>
+</header>
+<div class="kacheln">
+  <a href="zuordnungen/zuordnungen_schueler.html" class="kachel zuordnungen">
+    <div class="kachel-titel">Zuordnungen</div>
+    <div class="kachel-text">Proportionale und antiproportionale Zuordnungen, Darstellungsformen, Diagramme</div>
+    <div class="kachel-badge">Zum Test →</div>
+  </a>
+  <a href="prozente/prozente_schueler.html" class="kachel prozente">
+    <div class="kachel-titel">Prozente</div>
+    <div class="kachel-text">Grundwert, Prozentwert, Prozentsatz, prozentuale Veränderung</div>
+    <div class="kachel-badge">Zum Test →</div>
+  </a>
+</div>
+</body>
 </html>
