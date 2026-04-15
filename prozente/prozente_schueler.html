@@ -416,7 +416,7 @@ function zufaelligeAuswahl(pool) {
   if (pool.every(a => a.format === 'freitext')) return shuffle(pool).slice(0, 2);
   if (pool.every(a => a.format === 'ablesen')) return [[...pool].sort(() => Math.random() - 0.5)[0]];
   if (pool.every(a => a.format === 'wertetabelle')) return shuffle(pool).slice(0, 2);
-  if (pool.every(a => a.format === 'mc')) return shuffle(pool).slice(0, 3);
+  if (pool.every(a => a.format === 'mc')) return shuffle(pool).slice(0, 4);
   const quer = shuffle(pool.filter(a => a.format === 'quer'));
   const hoch = shuffle(pool.filter(a => a.format === 'hoch'));
   const auswahl = [quer[0], hoch[0]];
