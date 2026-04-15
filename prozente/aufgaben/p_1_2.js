@@ -1,52 +1,90 @@
 var aufgabenPool_p_1_2 = [
   {
     format: 'mc',
-    frage: 'Was bedeutet das Prozentzeichen?',
-    optionen: [
-      'p% bedeutet: p von 100 – also der Bruch p/100.',
-      'p% bedeutet: p mal 100.',
-      'p% bedeutet: 100 geteilt durch p.',
-      'p% ist ein anderes Zeichen für "ungefähr p".'
-    ],
-    richtig: 0,
-    erklaerung: 'Das Prozentzeichen bedeutet "von Hundert" – p% ist der Bruch p/100.'
+    kontext: '60/100 = 0,6%',
+    frage: 'Ist diese Aussage richtig oder falsch?',
+    optionen: ['Richtig', 'Falsch'],
+    richtig: 1,
+    erklaerung: '60/100 = 0,6 oder = 60% – aber nicht 0,6%. Das Prozentzeichen und die Dezimalzahl sind zwei verschiedene Darstellungen.'
   },
   {
     format: 'mc',
-    kontext: 'Ein Schüler sagt: „37% bedeutet, dass von 100 Teilen genau 37 gemeint sind."',
-    frage: 'Hat er recht?',
-    optionen: [
-      'Ja, das ist eine korrekte Erklärung.',
-      'Nein, 37% bedeutet 37 von 10.',
-      'Nein, 37% bedeutet 0,37 mal 37.',
-      'Nein, Prozent hat nichts mit 100 zu tun.'
-    ],
-    richtig: 0,
-    erklaerung: '37% = 37/100 – also genau 37 von 100 Teilen.'
+    kontext: '0,5 = 5%',
+    frage: 'Ist diese Aussage richtig oder falsch?',
+    optionen: ['Richtig', 'Falsch'],
+    richtig: 1,
+    erklaerung: '0,5 = 50%, nicht 5%. 5% wäre 0,05.'
   },
   {
     format: 'mc',
-    kontext: 'Eine Schülerin schreibt: 15% = 15 · 100',
-    frage: 'Ist das richtig?',
-    optionen: [
-      'Nein, 15% = 15/100.',
-      'Ja, Prozent bedeutet mal 100.',
-      'Ja, aber nur wenn die Zahl kleiner als 50 ist.',
-      'Nein, 15% = 100/15.'
-    ],
-    richtig: 0,
-    erklaerung: 'Prozent bedeutet "von Hundert" – also Division durch 100, nicht Multiplikation.'
+    kontext: '30% ist eine Zahl wie 30 kg oder 30 cm – man kann damit genauso rechnen.',
+    frage: 'Ist diese Aussage richtig oder falsch?',
+    optionen: ['Richtig', 'Falsch'],
+    richtig: 1,
+    erklaerung: '% ist keine Maßeinheit wie kg oder cm. % bedeutet „von 100" – es ist eine Rechenanweisung.'
   },
   {
     format: 'mc',
-    frage: 'Welche der folgenden Aussagen über das Prozentzeichen ist richtig?',
-    optionen: [
-      '"Prozent" kommt von "pro centum" – das ist Latein für "von hundert".',
-      '"Prozent" bedeutet "pro zehn".',
-      '"Prozent" ist ein modernes Wort ohne historische Bedeutung.',
-      '"Prozent" kommt von "pro centrum" – das heißt "von der Mitte".'
-    ],
+    kontext: '125% ist unmöglich, weil man nicht mehr als 100% haben kann.',
+    frage: 'Ist diese Aussage richtig oder falsch?',
+    optionen: ['Richtig', 'Falsch'],
+    richtig: 1,
+    erklaerung: '125% = 125/100 = 1,25 – Prozentzahlen über 100% sind möglich und sinnvoll, z.B. bei Wachstum.'
+  },
+  {
+    format: 'mc',
+    kontext: '3% und 0,03 bezeichnen denselben Anteil.',
+    frage: 'Ist diese Aussage richtig oder falsch?',
+    optionen: ['Richtig', 'Falsch'],
     richtig: 0,
-    erklaerung: '"Pro centum" bedeutet auf Lateinisch "von hundert" – daher kommt der Begriff Prozent.'
+    erklaerung: '3% = 3/100 = 0,03 – richtig!'
+  },
+  {
+    format: 'mc',
+    kontext: 'Ein Anteil von 0,7 ist kleiner als 70%.',
+    frage: 'Ist diese Aussage richtig oder falsch?',
+    optionen: ['Richtig', 'Falsch'],
+    richtig: 1,
+    erklaerung: '0,7 = 70% – beide bezeichnen denselben Anteil, keiner ist kleiner.'
+  },
+  {
+    format: 'mc',
+    kontext: '7,6% = 0,76',
+    frage: 'Ist diese Aussage richtig oder falsch?',
+    optionen: ['Richtig', 'Falsch'],
+    richtig: 1,
+    erklaerung: '7,6% = 7,6/100 = 0,076 – nicht 0,76. 0,76 wäre 76%.'
+  },
+  {
+    format: 'mc',
+    kontext: '50% ist dasselbe wie die Hälfte.',
+    frage: 'Ist diese Aussage richtig oder falsch?',
+    optionen: ['Richtig', 'Falsch'],
+    richtig: 0,
+    erklaerung: '50% = 50/100 = 1/2 – also genau die Hälfte. Richtig!'
+  },
+  {
+    format: 'mc',
+    kontext: '1% von 200 ist 2.',
+    frage: 'Ist diese Aussage richtig oder falsch?',
+    optionen: ['Richtig', 'Falsch'],
+    richtig: 0,
+    erklaerung: '1% = 1/100, also 1% von 200 = 200/100 = 2. Richtig!'
+  },
+  {
+    format: 'mc',
+    kontext: '0,03% und 3% bezeichnen denselben Anteil.',
+    frage: 'Ist diese Aussage richtig oder falsch?',
+    optionen: ['Richtig', 'Falsch'],
+    richtig: 1,
+    erklaerung: '0,03% = 0,03/100 = 0,0003, aber 3% = 3/100 = 0,03 – das ist nicht dasselbe.'
+  },
+  {
+    format: 'mc',
+    kontext: '3/5 = 3,5%',
+    frage: 'Ist diese Aussage richtig oder falsch?',
+    optionen: ['Richtig', 'Falsch'],
+    richtig: 1,
+    erklaerung: '3/5 = 60/100 = 60%, nicht 3,5%.'
   }
 ];
