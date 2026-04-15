@@ -191,13 +191,6 @@ var aufgabenPool_p_1_1 = [
   {
     format: 'freitext_html',
     kontext_html: `<span style="display:inline-block;text-align:center;vertical-align:middle;line-height:1.1"><span style="display:block;border-bottom:1.5px solid currentColor;padding:0 3px 1px">42,5</span><span style="display:block;padding:1px 3px 0">100</span></span>`,
-    frage: 'Schreibe als gekürzter Bruch.',
-    richtig: ['17/40'],
-    erklaerung: ''
-  },
-  {
-    format: 'freitext_html',
-    kontext_html: `<span style="display:inline-block;text-align:center;vertical-align:middle;line-height:1.1"><span style="display:block;border-bottom:1.5px solid currentColor;padding:0 3px 1px">42,5</span><span style="display:block;padding:1px 3px 0">100</span></span>`,
     frage: 'Schreibe als Dezimalzahl.',
     richtig: ['0,425', '0.425'],
     erklaerung: ''
@@ -354,13 +347,6 @@ var aufgabenPool_p_1_1 = [
     kontext_html: `<span style="display:inline-block;text-align:center;vertical-align:middle;line-height:1.1"><span style="display:block;border-bottom:1.5px solid currentColor;padding:0 3px 1px">3</span><span style="display:block;padding:1px 3px 0">8</span></span>`,
     frage: 'Schreibe als Prozentzahl.',
     richtig: ['37,5%', '37,5'],
-    erklaerung: ''
-  },
-  {
-    format: 'freitext_html',
-    kontext_html: `<span style="display:inline-block;text-align:center;vertical-align:middle;line-height:1.1"><span style="display:block;border-bottom:1.5px solid currentColor;padding:0 3px 1px">37,5</span><span style="display:block;padding:1px 3px 0">100</span></span>`,
-    frage: 'Schreibe als gekürzter Bruch.',
-    richtig: ['3/8'],
     erklaerung: ''
   },
   {
@@ -774,13 +760,6 @@ var aufgabenPool_p_1_1 = [
     kontext_html: `<span style="display:inline-block;text-align:center;vertical-align:middle;line-height:1.1"><span style="display:block;border-bottom:1.5px solid currentColor;padding:0 3px 1px">5</span><span style="display:block;padding:1px 3px 0">8</span></span>`,
     frage: 'Schreibe als Prozentzahl.',
     richtig: ['62,5%', '62,5'],
-    erklaerung: ''
-  },
-  {
-    format: 'freitext_html',
-    kontext_html: `<span style="display:inline-block;text-align:center;vertical-align:middle;line-height:1.1"><span style="display:block;border-bottom:1.5px solid currentColor;padding:0 3px 1px">62,5</span><span style="display:block;padding:1px 3px 0">100</span></span>`,
-    frage: 'Schreibe als gekürzter Bruch.',
-    richtig: ['5/8'],
     erklaerung: ''
   },
   {
