@@ -1,7 +1,7 @@
 var aufgabenPool_p_1_2 = [
   {
     format: 'mc',
-    kontext: '60/100 = 0,6%',
+    kontext: '<span style="display:inline-block;text-align:center;vertical-align:middle;line-height:1.1"><span style="display:block;border-bottom:1.5px solid currentColor;padding:0 3px 1px">60</span><span style="display:block;padding:1px 3px 0">100</span></span> = 0,6%',
     frage: 'Ist diese Aussage richtig oder falsch?',
     optionen: ['Richtig', 'Falsch'],
     richtig: 1,
@@ -81,7 +81,7 @@ var aufgabenPool_p_1_2 = [
   },
   {
     format: 'mc',
-    kontext: '3/5 = 3,5%',
+    kontext: '<span style="display:inline-block;text-align:center;vertical-align:middle;line-height:1.1"><span style="display:block;border-bottom:1.5px solid currentColor;padding:0 3px 1px">3</span><span style="display:block;padding:1px 3px 0">5</span></span> = 3,5%',
     frage: 'Ist diese Aussage richtig oder falsch?',
     optionen: ['Richtig', 'Falsch'],
     richtig: 1,
